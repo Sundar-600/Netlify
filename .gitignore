@@ -1,0 +1,31 @@
+.ready-tmux
+Notes.md
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Netlify CLI state
+.netlify/
+
+# Environment variables
+.env
+.env.*
+
+# Build artifacts (if any)
+dist/
+build/
+
+# Optional: VS Code settings
+.vscode/
+
+# Optional: Mac system file
+*.DS_Store
