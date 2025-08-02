@@ -6,21 +6,53 @@
 	<title>Basic PERN App</title>
 </head>
 <body>
-	<h2>User API End points</h2>
+	<h2>Tasks API End points</h2>
 	<br/>
 	<hr/>
 	<p>
-		Check the Available API Endpoints for User at 
-		<li>Create Users (POST Request): 
-			<p> https://pern-21um.onrender.com/api/users<p>
+		Check the Available API Endpoints for Tasks at 
+		<li>
+			Create Tasks (POST Request): 
+			<p> https://pern-21um.onrender.com/api/tasks</p>
 			<br>
 			<p>
-				Send JSON in the body of the request with {"name" : "username"}, Also note the created id of the created user for testing with other Endpoints where it's needed
+				Make Sure you create a user before this Send JSON in the body of the request with {"name" : "taskname","userId": "id of the created user"} also make sure note the created id for testing with other API endpoints
+			</p> 
+		</li>
+
+		<li>
+			See All Tasks cretaed by all users (GET Request) : 
+			<p> https://pern-21um.onrender.com/api/tasks</p>
+		</li>
+
+		<li>
+			See All Tasks cretaed by specific user (GET Request) : 
+			<p> https://pern-21um.onrender.com/api/users/tasks</p>
+			<p>
+				Make Sure you create a user before this Send JSON in the body of the request with {"userId": "id of the created user"}
 			</p>
 		</li>
-		<li>See All Users (GET Request) : 
-			<p> https://pern-21um.onrender.com/api/users<p>
+
+		<li>
+			Update Task by Task ID (PUT Request) : 
+			<p> https://pern-21um.onrender.com/api/tasks/{task_id}</p>
+			<p>
+				Make Sure you create a task before this Send JSON in the body of the request with {"status": "COMPLETED|IN_PROGRESS|FAILED"}
+				use one of the options completed or in_progress or failed don't put more than one put your created task id in the place of {task_id}
+			</p>
+			<br>
+		</li>
+
+		<li>
+			Delete Task by Task ID (PUT Request) : 
+			<p> https://pern-21um.onrender.com/api/users/tasks/{task_id}</p>
+			<p>
+				Make Sure you create a task before this Send JSON in the body of the request with {"status": "COMPLETED|IN_PROGRESS|FAILED"}
+				use one of the options completed or in_progress or failed don't put more than one example {"status": "COMPLETED"} put your created task id in the place of {task_id}
+			</p>
+			<br>
 		</li>
 	</p>
+
 </body>
 </html>
