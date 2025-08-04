@@ -20,6 +20,35 @@
 		</li>
 		<li>See All Users (GET Request) : 
 			<p> https://pern-21um.onrender.com/api/users<p>
+			<p>
+				Also if you include ?name query parameter it will filter the user by name
+				Example :
+				https://pern-21um.onrender.com/api/users?name="username"
+			</p>
+		</li>
+		<li>See Specific User (GET Request) : 
+			<p> https://pern-21um.onrender.com/api/users/{id}<p>
+			<br>
+			<p>
+				Send the id of your user or known user on that {id} place holder
+			</p>
+		</li>
+
+		<li>Update Specific User (PUT Request) : 
+			<p> https://pern-21um.onrender.com/api/users/{id}<p>
+			<br>
+			<p>
+				Send the id of your user or known user on that {id} place holder
+				and Send JSON in the body of the request with {"name":"new_username"}
+			</p>
+		</li>
+
+		<li>Delete Specific User (DELETE Request) : 
+			<p> https://pern-21um.onrender.com/api/users/{id}<p>
+			<br>
+			<p>
+				Send the id of your user or known user on that {id} place holder to delete Note : It will delete all the task created by the particular user as well
+			</p>
 		</li>
 	</p>
 </body>
